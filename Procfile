@@ -1,1 +1,1 @@
-web: gunicorn m_roots.wsgi:application --log-file -
+web: gunicorn m_roots.wsgi --log-file -
