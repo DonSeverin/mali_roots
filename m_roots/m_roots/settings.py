@@ -27,7 +27,8 @@ SECRET_KEY = 'django-insecure-!x!h@2!wx)m=jt(cvdqtkz$@rpimertn*-i(01dte-a=8_8f0p
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.ngrok.io', '127.0.0.1']
+
 AUTH_USER_MODEL = 'voicesystem.Account'
 
 # Application definition
@@ -49,7 +50,7 @@ MIDDLEWARE = [
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    #'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
 ROOT_URLCONF = 'm_roots.urls'
@@ -132,3 +133,6 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+MEDIA_ROOT = BASE_DIR / 'voicesystem/static'
+MEDIA_URL = '/images/'

@@ -3,3 +3,10 @@ The key idea of our project is to help preserve biodiversity in Mali. The key us
 
 
 
+REQUIRMENTS:
+- Django 
+- Python 
+
+
+TO RUN: 
+- python manage.py runserver
