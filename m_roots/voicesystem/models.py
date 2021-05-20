@@ -62,19 +62,18 @@ class Account(AbstractBaseUser):
         return True    
     
 class User(models.Model):
-    account    = models.OneToOneField(Account, null=True, blank=True, on_delete=models.CASCADE) 
     
-    name       = models.CharField(max_length=60, default='NULL')
-    lastname   = models.CharField(max_length=60, default='NULL')
-    phone      = models.IntegerField(default= 0)
-    address    = models.CharField(max_length=150, default='NULL')
-    birth_date = models.DateField(default='1994-05-14')
+    firstName       = models.CharField(max_length=60, default='NULL')
+    lastName        = models.CharField(max_length=60, default='NULL')
+    telephone       = models.IntegerField(default= 0)
+    address         = models.CharField(max_length=150, default='NULL')
+    birthDate       = models.DateField(default='1994-05-14')
 
 class Call(models.Model):
     User       = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True )
   
     phone      = models.IntegerField(default= 0)
-    duration   = models.TimeField(default='08:00')
+    duration   = models.DurationField(default="NULL")
     dateTime   = models.DateField(default='1994-05-14')
     menuOption = models.CharField(max_length=256, default='NULL')
     latitude   = models.FloatField(default= 0)
@@ -100,3 +99,4 @@ class Tree(models.Model):
     age        = models.CharField(max_length=256, default='NULL')
     endangered = models.BooleanField(default=False, null=True, blank=True)
     seeds      = models.BooleanField(default=False, null=True, blank=True)
+

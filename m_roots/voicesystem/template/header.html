@@ -11,7 +11,10 @@
   <meta name="generator" content="Hugo 0.83.1">
   <title></title>
 
-  <!-- Custom styles for this template -->
+  <!-- Custom styles for the login template -->
+  <link href="{% static 'css/login.css'%}" rel="stylesheet"> 
+
+  <!-- Custom styles for the index template -->
   <link href="{% static 'css/index.css'%}" rel="stylesheet">
 
   <!-- Bootstrap core CSS -->
@@ -41,7 +44,7 @@
   <header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Mali Roots</a>
+        <a class="navbar-brand" href="/index">Mali Roots</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
           aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -50,8 +53,8 @@
           <ul class="navbar-nav me-auto mb-2 mb-md-0">
           </ul>
           <div class="d-grid gap-2 d-md-block">
-            <a href="#" class="btn btn-outline-light" type="button">Admin Portal</a>
-            <a href="#" class="btn btn-outline-success" type="button">The Code</a>
+            <a href="/login" class="btn btn-outline-light" type="button">Admin Portal</a>
+            <a href="https://github.com/DonSeverin/mali_roots" class="btn btn-outline-success" type="button">The Code</a>
 
           </div>
         </div>
