@@ -70,7 +70,8 @@ def engtreegather(request):
     if digits == '1':
         resp.say('You selected english! Please select the following trees or seeds sighted, you can select multiple trees please press the # key when finished with selection. ')
         with resp.gather(finishOnKey="#", num_digits=5, action='/englocGather/') as g:
-            g.say("For Pterocarpus erinaceus , press 1. For another tree, press 2., For another tree, press 3., For another tree, press 4., For another tree, press 5.", voice='alice') #List of trees 
+            g.say("For Pterocarpus erinaceus , press 1. For Terminalia habeensis  2., For Afzelia Africana , press 3., For Khaya senegalensis , press 4., For Dalbergia melanoxylon , press 5.", voice='alice') #List of trees
+            g.pause(length=2) 
     elif digits == '2':
         resp.say('You need support. We will help!')
     else:
@@ -95,8 +96,8 @@ def englocGather(request):
         resp.redirect('/#/')
     elif tree_digits >= '1':
         resp.say('Your selection has been confirmed, Thank You!')
-        with resp.gather(num_digits=6, action='/engconGather/') as g:
-            g.say("Please specify the area code where the trees have been sighted", voice='alice') #List of tree
+        with resp.gather(finishOnKey="#", num_digits=6, action='/engconGather/') as g:
+            g.say("Please specify the area code where the trees have been sighted after you've inputted your area code press #", voice='alice') #List of tree
     else:
         # If the caller didn't choose 1 or 2, apologize and ask them again
         resp.say("Sorry, I don't understand that choice.")
