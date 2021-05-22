@@ -1,1 +1,1 @@
-web: gunicorn m_roots.wsgi --log-file -
+web: gunicorn mali_roots.wsgi --log-file -
