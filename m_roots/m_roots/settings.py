@@ -131,7 +131,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-STATIC_URL = '/static/'
+#STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     STATIC_DIR,
 ]
@@ -141,5 +141,5 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-MEDIA_ROOT = BASE_DIR / 'voicesystem/static'
-MEDIA_URL = '/images/'
+#MEDIA_ROOT = BASE_DIR / 'voicesystem/static'
+#MEDIA_URL = '/images/'
