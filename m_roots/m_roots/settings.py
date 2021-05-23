@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-!x!h@2!wx)m=jt(cvdqtkz$@rpimertn*-i(01dte-a=8_8f0p
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.ngrok.io', '127.0.0.1']
+ALLOWED_HOSTS = ['.ngrok.io', '127.0.0.1','ict4dmali.herokuapp.com']
 
 AUTH_USER_MODEL = 'voicesystem.Account'
 
