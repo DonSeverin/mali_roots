@@ -3,11 +3,10 @@ from . import views
 
 from .views import init_comm, engtreegather, englocGather, engconGather, engconfirmGather 
 
-app_name = 'voicesystem'
 urlpatterns = [
 
     # ex: ./ 
-    path('index', views.index, name='index'),
+    path('/', views.index, name='index'),
     path('login', views.loginView, name='login'),
     path('dashboard', views.dashboard, name='dashboard'),
     path('logout', views.LogoutView, name='logout'),
