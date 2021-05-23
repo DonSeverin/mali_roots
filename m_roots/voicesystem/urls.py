@@ -6,7 +6,7 @@ from .views import init_comm, engtreegather, englocGather, engconGather, engconf
 urlpatterns = [
 
     # ex: ./ 
-    path('/', views.index, name='index'),
+    path('', views.index, name='index'),
     path('login', views.loginView, name='login'),
     path('dashboard', views.dashboard, name='dashboard'),
     path('logout', views.LogoutView, name='logout'),
