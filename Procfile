@@ -1,1 +1,1 @@
-web: gunicorn voicesystem.wsgi 
+web: gunicorn mali_roots.wsgi 
