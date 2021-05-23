@@ -132,6 +132,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = 'voicesystem/static'
+STATIC_ROOT = 'voicesystem/static'
 STATICFILES_DIRS = [
     STATIC_DIR,
 ]
