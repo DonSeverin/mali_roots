@@ -16,5 +16,5 @@ urlpatterns = [
     path('englocGather/', views.englocGather, name='englocGather'),
     path('engconGather/', views.engconGather, name='engconGather'),
     path('engconfirmGather/', views.engconfirmGather, name='engconfirmGather'),
-
+    
 ]
